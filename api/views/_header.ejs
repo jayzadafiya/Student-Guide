@@ -1,0 +1,22 @@
+<header>
+    <a href="/" class="logo">Student<span>Guide</span></a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <div>
+
+            <a href="/">home</a>
+            <% if (isLoggedIn) { %>
+                <a href="/course">course</a>
+                <% } %>
+                    <a href="/team">Our Team</a>
+                    <a href="/contact">contact</a>
+        </div>
+        <% if (isLoggedIn) { %>
+            <form action="/logout" method="POST">
+                <button type="submit" class="btn">Sign Out</button>
+            </form>
+            <% } %>
+    </nav>
+</header>

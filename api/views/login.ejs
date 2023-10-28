@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="css/style.css" />
+
+    <div class="container">
+        <%- include('_header');%>
+
+        <h1 class="heading">LOGIN</h1>
+
+        <!-- contact section  -->
+
+        <section class="contact">
+            <div class="image">
+                <img src="images/login.avif" alt="" />
+            </div>
+
+            <form action="/login" method="POST">
+                <input type="text" name="email" placeholder="Enter a Email id" class="box" id="username" />
+
+
+                <input type="password" name="password" placeholder="password" class="box" id="password" />
+
+
+                  <button type="submit" class="btn btn-primary">Login</button>
+                <br>
+                <br>
+                <br>
+                <h2>Don't have an account?
+                    <a href="registration">sign-up</a>
+                </h2>
+                <% if (error) { %>
+                    <div class="err-text">
+                            <%= message %>
+                        
+                    </div> <!-- Display error message -->
+                    <% } %>
+            </form>
+        </section>
+
+        <!-- footer section  -->
+
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>about us</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                        maxime!
+                    </p>
+                </div>
+
+                <div class="box">
+                    <h3>contact us</h3>
+                    <p><i class="fas fa-phone"></i> +91 9999999999</p>
+                    <p><i class="fas fa-envelope"></i> Studentguide@Gmail.Com</p>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> GEC-Bhavnagar, india -
+                        364001
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- custom js file link -->
+    <script src="/js/script.js"></script>
+    <script src="/js/validate.js"></script>

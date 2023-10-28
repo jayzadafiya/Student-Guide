@@ -1,0 +1,88 @@
+<link rel="stylesheet" href="/css/style.css">
+
+<div class="container">
+
+    <%- include('_header');%>
+
+    <h1 class="heading">TECHNOLOGIES</h1>
+
+    <!-- course section -->
+    <section class="course">
+      <% if (isLoggedIn) { %>
+        <div class="box">
+          <img src="images/course-1.png" alt="">
+          <h3>JAVA</h3>
+          <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few
+            implementation dependencies as possible.</p>
+          <div class="icons">
+            <p><i><a href="courses/java/javayoutube.html" class="">YouTube</a></i></p>
+            <p><i><a href="courses/java/javawebsites.html" class="">Website</a></i></p>
+            <p><i><a href="courses/java/javacourses.html" class="">Courses</a></i></p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/c.png" alt="">
+          <h3>C-LANGUAGE</h3>
+          <p>C is an imperative procedural language, supporting structured programming, lexical variable scope and
+            recursion, with a static type system.</p>
+          <div class="icons">
+            <p><i><a href="courses/c/clangyoutube.html" class="">YouTube</a></i></p>
+            <p><i><a href="courses/c/clangwebsites.html" class="">Website</a></i></p>
+            <p><i><a href="courses/c/clangcourses.html" class="">Courses</a></i></p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/c++.jpg" alt="">
+          <h3>c++</h3>
+          <p>C++ is an object-oriented programming (OOP) language that is viewed by many as the best language for
+            creating large-scale applications.</p>
+            <br><br>
+          <div class="icons">
+            <p><i><a href="courses/c++/cppyoutube.html" class="">YouTube</a></i></p>
+            <p><i><a href="courses/c++/cppwebsites.html" class="">Website</a></i></p>
+            <p><i><a href="courses/c++/cppcourses.html" class="">Courses</a></i></p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/python.png" alt="">
+          <h3>Python</h3>
+          <p>Python is a high-level programming language known for its simplicity, widely used for web development, data
+            analysis, and automation task.</p>
+          <div class="icons">
+            <p><i><a href="courses/python/pythonyoutube.html" class="">YouTube</a></i></p>
+            <p><i><a href="courses/python/pythonwebsites.html" class="">Website</a></i></p>
+            <p><i><a href="courses/python/pythoncourses.html" class="">Courses</a></i></p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/course-5.png" alt="">
+          <h3>Cyber Security</h3>
+          <p>Cybersecurity involves protecting computer systems and networks from unauthorized access, breaches, and
+            threats to ensure data confidentiality and system integrity.</p>
+          <div class="icons">
+            <p><i><a href="courses/cs/csyoutube.html" class="">YouTube</a></i></p>
+            <p><i><a href="courses/cs/cswebsites.html" class="">Website</a></i></p>
+            <p><i><a href="courses/cs/cscourses.html" class="">Courses</a></i></p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/course-6.png" alt="">
+          <h3>Data Science</h3>
+          <p>Data science integrates math, statistics, and computer science to extract insights from data for informed
+            decision-making and problem-solving across domains.</p>
+          <div class="icons">
+            <p><i><a href="courses/ds/dsyoutube.html" class="">YouTube</a></i></p>
+            <p><i><a href="courses/ds/dswebsites.html" class="">Website</a></i></p>
+            <p><i><a href="courses/ds/dscourses.html" class="">Courses</a></i></p>
+          </div>
+        </div>
+        <% } else { %>
+          <div class="box">
+            <h3>Login Required</h3>
+            <p>Please log in to access the course content.</p>
+          </div>
+          <% } %>
+    </section>
+
+    <%- include('_footer');%>
+  </div>

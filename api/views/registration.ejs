@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="css/style.css" />
+<div class="container">
+    <%- include('_header'); %>
+
+        <h1 class="heading">Sign-up</h1>
+
+        <!-- contact section  -->
+        <section class="contact">
+            <div class="image">
+                <img src="images/login.avif" alt="" />
+            </div>
+
+            <form action="/registration" method="POST">
+                <div class="inputBox">
+                    <input type="text" name="name" placeholder="name" id="name" />
+                    <input type="email" name="email" placeholder="email" id="email" />
+                </div>
+                <input type="text" name="phone" placeholder="phone number" class="box" id="username" />
+
+                <input type="password" name="password" placeholder="password" class="box" id="password" />
+                <input type="password" name="cpassword" placeholder="re-enter password" class="box"
+                    id="password-confirm" />
+                <% if (error) { %>
+                    <div class="err-text">
+                            <%= message %>
+                    </div> <!-- Display error message -->
+                    <% } %>
+                        <button type="submit" class="btn">Submit</button>
+                        <br>
+                        <br>
+                        <br>
+                        <h2>Already have an account?
+                            <a href="login">Login</a>
+                        </h2>
+
+            </form>
+        </section>
+
+        <!-- footer section  -->
+        <%- include('_footer'); %>
+
+</div>

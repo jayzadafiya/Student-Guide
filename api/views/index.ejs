@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="/css/style.css">
+    <div class="container">
+        <%- include('_header');%>
+
+
+        <!-- home section  -->
+
+        <section class="home">
+            <div class="content">
+                <h3>E-learning is a better way of learning</h3>
+                <p>
+                    We aim to build a platform where students and learning aspirants
+                    (company interns, applicants for interview). This website will make
+                    their learning easy, efficient and interesting. We club all best
+                    resources for a desired course saving your time and energy. So, come
+                    on! Let's all grow and rock the future.
+                </p>
+                <% if (!isLoggedIn) { %>
+                   
+                    <h2>Already have an account? <a href="login">Login</a></h2>
+                    <% }else{ %>
+                    <form action="/logout" method="POST">
+                        <button type="submit" class="btn">Sign Out</button>
+                    </form>
+                        <% } %>
+
+            </div>
+
+            <div class="image">
+                <img src="images/home-img.svg" alt="" />
+            </div>
+        </section>
+
+        <!-- footer section  -->
+
+        <%- include('_footer');%>
+       
+    </div>
+
+    <!-- custom js file link -->
+    <script src="js/script.js"></script>

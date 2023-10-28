@@ -1,0 +1,39 @@
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <div class="container">
+    
+        <%- include('_header');%>
+
+    <h1 class="heading">contact us</h1>
+
+    <!-- contact section  -->
+
+    <section class="contact">
+      <div class="image">
+        <img src="images/contact-img.svg" alt="" />
+      </div>
+
+      <form action="/contact" method="post">
+        <div class="inputBox">
+          <input type="text" name="name" placeholder="name" />
+          <input type="email" name="email" placeholder="email" />
+        </div>
+
+        <input type="text" placeholder="subject" name="subject" class="box" />
+
+        <textarea placeholder="message" name="message" id="" cols="30" rows="10"></textarea>
+
+        <input type="submit" class="btn" value="send" />
+        <a href="https://landbot.online/v3/H-1591881-31PQPFGAGT0QRV4L/index.html" class="btn">Any Queries?</a>
+
+      </form>
+    </section>
+
+    <!-- footer section  -->
+        <%- include('_footer');%>
+
+  </div>
+
+  <!-- custom js file link -->
+  <script src="js/script.js"></script>
